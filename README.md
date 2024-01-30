@@ -108,7 +108,7 @@ export default TitleAnimation;
 import { useEffect, useState } from 'react';
 import Scramble from 'react-scramble';
 import { useInView } from 'react-intersection-observer'
-const TitleAnimation = () => {
+const TitleAnimation = ({text}) => {
     const [animate, setAnimate] = useState(false);
     const [ref, inView] = useInView({
         triggerOnce: false,
@@ -127,7 +127,7 @@ const TitleAnimation = () => {
             <Scramble
                 key={animate}
                 autoStart={animate}
-                text="Scramble me!"
+                text={text}
                 steps={[
                     {
                         roll: 10,
@@ -147,3 +147,8 @@ const TitleAnimation = () => {
 export default TitleAnimation;
 
 ```
+
+---
+Now import this component and pass the text as props.
+
+[Live link](https://darkasfu.github.io/react-scramble-animation/)
