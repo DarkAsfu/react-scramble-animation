@@ -151,4 +151,4 @@ export default TitleAnimation;
 ---
 Now import this component and pass the text as props.
 
-[Live link](https://darkasfu.github.io/react-scramble-animation/)
+[Live link](https://reactscrambleanimation.netlify.app/)
